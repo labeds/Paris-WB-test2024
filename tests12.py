@@ -31,7 +31,39 @@ plt.axis("off")
 plt.tight_layout(pad = 0)
 plt.show()
 
+
+
 #Exercise 2----------------------------------------------------------------
 # author: IB
 # to be validated by: WB
 # state: ongoing
+
+!pip install pillow
+import numpy as np 
+from PIL import Image,ImageOps
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud,STOPWORDS,ImageColorGenerator
+from scipy.ndimage import gaussian_gradient_magnitude 
+
+# Download the Shakespeare text from the desktop
+file=open("romeo.txt",'r')
+text=file.read()
+
+# Create the WordCloud
+canvas_width = 1920
+canvas_height = 1080 
+
+# Generate wordcloud
+wordcloud = WordCloud(width=canvas_width,height=canvas_height).generate(text)
+wordcloud.to_file("simple_wordcloud.png") 
+plt.figure(figsize = (10, 10), facecolor=None)
+
+# Save the output wordcloud in png format
+plt.imshow(wordcloud, interpolation='bilinear')
+
+# Show the image output 
+plt.axis("off") 
+plt.tight_layout(pad = 0)
+plt.show()
+
+
