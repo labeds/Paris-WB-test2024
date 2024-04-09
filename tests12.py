@@ -27,9 +27,11 @@ wordcloud = WordCloud(background_color = 'white', stopwords = exclure_mots , max
 plt.figure(figsize = (10, 10), facecolor=None)
 plt.imshow(wordcloud)
 
-
-
-
 plt.axis("off")
 plt.tight_layout(pad = 0)
 plt.show()
+
+#Exercise 2----------------------------------------------------------------
+# author: IB
+# to be validated by: WB
+# state: ongoing
