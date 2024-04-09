@@ -8,6 +8,10 @@ Original file is located at
 """
 
 #Exercise 1----------------------------------------------------------------
+# author: WB
+# to be validated by: IB
+# state: ongoing
+
 !pip install wordcloud
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
@@ -22,6 +26,10 @@ exclure_mots = ['d', 'du', 'de', 'la', 'des', 'le', 'et', 'est', 'elle', 'une', 
 wordcloud = WordCloud(background_color = 'white', stopwords = exclure_mots , max_words = 50).generate(text)
 plt.figure(figsize = (10, 10), facecolor=None)
 plt.imshow(wordcloud)
+
+
+
+
 plt.axis("off")
 plt.tight_layout(pad = 0)
 plt.show()
