@@ -33,6 +33,9 @@ plt.show()
 # author: BW
 # state : ongoing
 
+
+same code 
+
 # exercice 3
 # author: Ba
 # state : ongoing
