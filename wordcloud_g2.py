@@ -11,6 +11,10 @@ Original file is located at
 # author first member
 # state: ongoing
 
+# print(data)
+
+
+
 # exercice 2
 # author WB
 # state: ongoing
