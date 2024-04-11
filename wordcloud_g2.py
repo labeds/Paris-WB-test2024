@@ -12,6 +12,8 @@ Original file is located at
 # state: ongoing
 
 # print(data)
+def newfunction():
+    print("hello")
 
 
 
